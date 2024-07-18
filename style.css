@@ -167,6 +167,10 @@ ul li:first-child {
   }
   .hero-title {
     margin-top: 50px;
+    margin-left: 10px;
+  }
+  .hero-describtion {
+    margin-left: 10px;
   }
   .hero-btn1 {
     margin-left: 50px;

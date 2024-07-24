@@ -34,6 +34,10 @@
   border-radius: 25px;
   cursor: pointer;
 }
+.section-bg {
+  background-color: black;
+  width: 100%;
+}
 
 /* shared style end  */
 header {
@@ -62,6 +66,12 @@ header {
   font-size: 1.02rem;
   font-weight: 500;
   padding: 0 18px;
+}
+.navbar li:hover {
+  background-color: #e6533c;
+  padding: 5px 0px;
+  border-radius: 20px;
+  transition: ease 500ms;
 }
 .navbar .menu {
   width: 45px;
@@ -132,6 +142,13 @@ ul li:first-child {
   margin-left: -50px;
   position: absolute;
 }
+.circle {
+  background-color: #e6533c;
+  border-radius: 50px;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+}
 
 .badge2 {
   width: 140px;
@@ -145,6 +162,19 @@ ul li:first-child {
   margin-top: -400px;
   margin-left: 230px;
 }
+.badge-number1 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 10px;
+}
+.badge-title1 {
+  font-size: 0.7rem;
+  color: rgba(239, 237, 232, 0.65);
+  font-weight: 400;
+  margin-left: 20px;
+}
+
 .badge-number {
   font-weight: 700;
   font-size: 1.2rem;
@@ -152,19 +182,179 @@ ul li:first-child {
 }
 .badge-title {
   font-size: 0.7rem;
-  margin-top: 5px;
   color: rgba(239, 237, 232, 0.65);
   font-weight: 400;
 }
 
 /* header section style end ----  */
 
+/* habit section relatate style  */
+.habit-container {
+  width: 100%;
+  background-color: black;
+}
+.habit-content {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+
+  padding-top: 80px;
+}
+.habit-title {
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.habit-describtion {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  margin: 15px 0;
+}
+.habit-cards {
+  margin: 80px 110px 0px 110px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding-bottom: 100px;
+}
+
+.habit-card {
+  height: 250px;
+  max-width: 200px;
+
+  text-align: center;
+}
+.habit-card img {
+  width: 80%;
+
+  border-radius: 50%;
+}
+.habit-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  margin: 8px 0;
+}
+.habit {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ****Run section style here **** */
+.run-container {
+  max-width: 1050px;
+  max-height: 900px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(100px);
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+.run-content {
+  max-width: 400px;
+  margin-left: 50px;
+}
+.run-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.run-content p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 15px 0 18px;
+}
+.run-man img {
+  border-radius: 15px;
+  max-height: 220px;
+  max-width: 400px;
+  margin: 20px;
+}
+
+/* ========BMI Section======== */
+.bmi-header {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 70px;
+}
+.bmi-describtion {
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
+.bmi-chart h1 {
+  margin-bottom: 20px;
+}
+table {
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 8px;
+  color: rgba(255, 255, 255, 0.5);
+}
+th {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 8px;
+  color: white;
+}
+.calculator-container {
+  max-width: 100%;
+  max-height: 900px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(100px);
+  margin: 0 auto;
+  color: white;
+  padding: 30px 0px;
+  margin-bottom: 100px;
+  justify-content: space-around;
+}
+
+.bmi-calculator {
+  max-width: 500px;
+}
+.bmi-calculator p {
+  margin: 16px 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+}
+form input {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 8px;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.option,
+label {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 8px 8px;
+  color: rgba(255, 255, 255, 0.6);
+}
 /* small device responsive */
 
 @media screen and (max-width: 576px) {
-  .hero-container {
+  .hero-container,
+  .run-container,
+  .calculator-container {
     flex-direction: column;
   }
+  .badge {
+    margin-left: 0;
+  }
+  .badge2 {
+    margin-left: 205px;
+  }
+
+  .habit-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .hero-title {
     margin-top: 50px;
     margin-left: 10px;
@@ -184,5 +374,24 @@ ul li:first-child {
   .navbar .menu {
     margin-bottom: 10px;
     display: block;
+  }
+  .habit-describtion {
+    padding: 0 10px;
+  }
+  #run-btn {
+    width: 90%;
+  }
+  .calculator-container {
+    align-items: center;
+  }
+  .bmi-calculator {
+    max-width: 300px;
+    margin-top: 40px;
+  }
+  .bmi-header {
+    font-size: 2.5rem;
+  }
+  .bmi-describtion {
+    padding: 0 15px;
   }
 }

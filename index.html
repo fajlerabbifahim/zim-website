@@ -152,25 +152,50 @@
               We believe fitness should be accessible to everyone, everywhere,
               regardless of income or access to a gym.
             </p>
-            <form>
-              <input type="text" placeholder="Height/cm" />
-              <input type="text" placeholder="Weight/kg" /><br /><br />
-              <input type="text" placeholder="Age" />
-              <label for="">Sex</label>
-              <select class="option">
-                <option value="">Male</option>
-                <option value="">Female</option></select
-              ><br /><br />
-              <label for="">Select an activity factor</label>
-              <select class="option">
-                <option value="">activity 1</option>
-                <option value="">activity 2</option>
-                <option value="">activity 3</option></select
-              ><br /><br />
-              <input type="submit" class="primary-btn" />
-            </form>
+            <div class="form-container">
+              <form class="form">
+                <div class="column">
+                  <div class="input-box">
+                    <input type="text" placeholder="Height/cm" />
+                  </div>
+                  <div class="input-box">
+                    <input type="text" placeholder="Weight/kg" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="input-box">
+                    <input type="text" placeholder="Age" />
+                  </div>
+                  <div class="input-box">
+                    <select>
+                      <option hidden="">Sex</option>
+                      <option value="">Male</option>
+                      <option value="">Female</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input-box">
+                  <select>
+                    <option hidden>Select an activity factor</option>
+                    <option>X Factor</option>
+                    <option>Z Factor</option>
+                  </select>
+                </div>
+                <button class="primary-btn btn-calculator">Calculate</button>
+              </form>
+            </div>
           </div>
         </div>
+      </section>
+
+      <!-- =====Team section===== -->
+      <section class="teams">
+        <h2>Meet Our Team</h2>
+        <p>
+          We believe fitness should be accessible to everyone, everywhere,
+          regardless of income or access to a gym.
+        </p>
+        <div class="team-container"></div>
       </section>
     </main>
   </body>

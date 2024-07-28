@@ -37,6 +37,7 @@
 .section-bg {
   background-color: black;
   width: 100%;
+  height: 100%;
 }
 
 /* shared style end  */
@@ -321,21 +322,62 @@ th {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.9rem;
 }
-form input {
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  border-radius: 5px;
-  padding: 8px 8px;
-  gap: 10px;
-  color: rgba(255, 255, 255, 0.6);
+.form-container .form {
+  margin-top: 10px;
 }
-.option,
-label {
-  border: none;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 8px 8px;
-  color: rgba(255, 255, 255, 0.6);
+
+.form .input-box {
+  width: 100%;
+  margin-top: 10px;
 }
+.input-box input {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  outline: none;
+}
+select,
+option {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+.form .input-box input,
+select {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid darkgoldenrod;
+  padding: 0 15px;
+}
+.column {
+  display: flex;
+  column-gap: 5px;
+}
+.btn-calculator {
+  margin-top: 20px;
+  padding: 10px 40px;
+}
+/* =====Team section style===== */
+.teams h2 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.teams p {
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 80px;
+}
+.team-container {
+  max-width: 900px;
+  max-height: 500px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(100px);
+  margin: 0 auto;
+}
+
 /* small device responsive */
 
 @media screen and (max-width: 576px) {

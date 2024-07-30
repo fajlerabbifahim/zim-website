@@ -108,6 +108,7 @@ ul li:first-child {
   font-family: miama;
   font-weight: 100;
   font-size: 4rem;
+  line-height: 1;
 }
 .hero-describtion {
   font-size: 1rem;
@@ -203,7 +204,7 @@ ul li:first-child {
 }
 .habit-title {
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
 }
 .habit-describtion {
@@ -257,7 +258,7 @@ ul li:first-child {
   margin-left: 50px;
 }
 .run-content h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 .run-content p {
@@ -275,7 +276,7 @@ ul li:first-child {
 /* ========BMI Section======== */
 .bmi-header {
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   margin-top: 70px;
 }
@@ -358,10 +359,10 @@ select {
   padding: 10px 40px;
 }
 /* =====Team section style===== */
-.teams h2 {
+.teams h1 {
   color: white;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 .teams p {
@@ -371,11 +372,34 @@ select {
   margin-bottom: 80px;
 }
 .team-container {
-  max-width: 900px;
-  max-height: 500px;
+  max-width: 860px;
+  max-height: 520px;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(100px);
   margin: 0 auto;
+  border-radius: 8px;
+}
+
+.team-content {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+.trainer img {
+  width: 250px;
+  height: 220px;
+  border-radius: 8px;
+}
+.trainer {
+  position: relative;
+}
+.trainer-data {
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
 }
 
 /* small device responsive */
@@ -435,5 +459,11 @@ select {
   }
   .bmi-describtion {
     padding: 0 15px;
+  }
+  .team-content {
+    grid-template-columns: repeat(1, 250px);
+  }
+  .team-container {
+    max-height: 100%;
   }
 }

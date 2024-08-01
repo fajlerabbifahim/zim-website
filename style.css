@@ -39,6 +39,9 @@
   width: 100%;
   height: 2990px;
 }
+.hidden {
+  display: none;
+}
 
 /* ======header section====== */
 
@@ -76,7 +79,7 @@ header {
   transition: ease 500ms;
 }
 .navbar .menu {
-  width: 45px;
+  width: 30px;
   align-items: center;
   display: none;
 }
@@ -204,7 +207,7 @@ ul li:first-child {
 }
 .habit-title {
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 800;
 }
 .habit-describtion {
@@ -246,7 +249,7 @@ ul li:first-child {
 .run-container {
   max-width: 1050px;
   max-height: 900px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #ffffff80;
   backdrop-filter: blur(100px);
   margin: 0 auto;
   justify-content: space-between;
@@ -258,7 +261,7 @@ ul li:first-child {
   margin-left: 50px;
 }
 .run-content h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 .run-content p {
@@ -278,7 +281,7 @@ ul li:first-child {
 /* ========BMI Section======== */
 .bmi-header {
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-align: center;
   margin-top: 70px;
 }
@@ -364,7 +367,7 @@ select {
 .teams h1 {
   color: white;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 20px;
 }
 .teams p {
@@ -376,7 +379,7 @@ select {
 .team-container {
   max-width: 860px;
   max-height: 520px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #ffffff80;
   backdrop-filter: blur(100px);
   margin: 0 auto;
   border-radius: 8px;
@@ -421,9 +424,15 @@ select {
   margin-top: 100px;
   color: white;
 }
+.member-sub-title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+}
 .member-title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: white;
   font-weight: 600;
   margin-bottom: 60px;
@@ -431,13 +440,17 @@ select {
 .member-card-container {
   display: flex;
   justify-content: center;
-  gap: 14px;
+  gap: 12px;
 }
 .member-card-content {
   max-height: 410px;
   max-width: 280px;
 
-  background-color: rgba(255, 255, 255, 0.5);
+  background: linear-gradient(
+    135deg,
+    hsla(8, 77%, 57%, 1) 0%,
+    hsla(0, 0%, 24%, 1) 100%
+  );
   /* border: 0.1px solid rgba(255, 255, 255, 0.5); */
   border-radius: 5px;
   text-align: center;
@@ -453,9 +466,9 @@ select {
   font-weight: 400;
 }
 .card-header {
-  background-color: #222222;
+  background-color: rgba(239, 237, 232, 0.2);
   font-size: 1.5rem;
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 8px 10px;
   width: 100%;
   font-weight: 600;
@@ -478,6 +491,11 @@ select {
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
+  transition: ease 500ms;
+}
+#member-btn:hover {
+  background-color: #e6533c;
+  color: white;
 }
 .middle-member-card {
   transform: scale(1.1);
@@ -520,7 +538,7 @@ footer {
   color: rgba(255, 255, 255, 0.5);
 }
 hr {
-  margin: 70px auto 30px;
+  margin: 58px auto 30px;
   max-width: 1050px;
   border: none;
   height: 2px;
@@ -540,6 +558,21 @@ hr {
   text-decoration: underline;
 }
 
+.social-header {
+  margin: 15px 0 10px;
+  color: white;
+  font-size: 1.1rem;
+}
+.social i {
+  font-size: 1.4rem;
+  color: rgba(239, 237, 232, 0.65);
+  transition: ease-in 400ms;
+  margin-right: 5px;
+}
+.social i:hover {
+  color: #e6533c;
+  transform: scale(1.2);
+}
 /* =====responsive for small device===== */
 
 @media screen and (max-width: 576px) {
@@ -577,7 +610,6 @@ hr {
     padding: 20px;
   }
   .navbar .menu {
-    margin-bottom: 10px;
     display: block;
   }
   .habit-describtion {
@@ -594,7 +626,7 @@ hr {
     margin-top: 40px;
   }
   .bmi-header {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .bmi-describtion {
     padding: 0 15px;
@@ -628,5 +660,12 @@ hr {
   }
   .membership-container {
     padding-bottom: 70px;
+  }
+  .social.hidden-for-small-device {
+    display: none;
+  }
+  .social {
+    margin-top: 25px;
+    display: block;
   }
 }

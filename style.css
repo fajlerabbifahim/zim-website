@@ -107,11 +107,12 @@ ul li:first-child {
   font-size: 3.7rem;
   margin-top: -70px;
   color: white;
+  line-height: 60px;
 }
 .hero-title > span {
   font-family: miama;
   font-weight: 100;
-  font-size: 6rem;
+  font-size: 5.2rem;
   line-height: 1px;
 }
 .hero-describtion {
@@ -341,18 +342,20 @@ th {
   color: black;
   outline: none;
 }
+
 select,
 option {
   background-color: rgba(255, 255, 255, 0.5);
-  color: black;
+  color: rgb(88, 82, 86);
 }
+
 .form .input-box input,
 select {
   height: 35px;
   width: 100%;
   outline: none;
   border-radius: 8px;
-  border: 1px solid darkgoldenrod;
+  border: none;
   padding: 0 15px;
 }
 .column {
@@ -566,7 +569,7 @@ hr {
 .social i {
   font-size: 1.4rem;
   color: rgba(239, 237, 232, 0.65);
-  transition: ease-in 400ms;
+  transition: ease-in 350ms;
   margin-right: 5px;
 }
 .social i:hover {
@@ -618,6 +621,10 @@ hr {
   #run-btn {
     width: 90%;
   }
+  .run-content {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
   .calculator-container {
     align-items: center;
   }
@@ -636,6 +643,7 @@ hr {
   }
   .team-container {
     max-height: 100%;
+    padding-bottom: 0;
   }
   .section-bg,
   .membership-container {

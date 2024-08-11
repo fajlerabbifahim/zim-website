@@ -645,6 +645,9 @@ hr {
     max-height: 100%;
     padding-bottom: 0;
   }
+  .teams p {
+    max-width: 400px;
+  }
   .section-bg,
   .membership-container {
     height: 100%;
